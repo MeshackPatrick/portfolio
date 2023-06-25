@@ -1,16 +1,16 @@
 var tabLinks=document.getElementsByClassName(`tab-links`)
 var tabContents=document.getElementsByClassName(`tab-contents`)
 function openTab(tabName){
-    for (tabLink of tabLinks){
-        tabLink.classList.remove(`active-links`)
+    for (tabLinks of tabLinks){
+        tabLinks.classList.remove(`active-links`)
     }
-    for (tabContent of tabContents){
-        tabContent.classList.remove(`active-tab`)
+    for (tabContents of tabContents){
+        tabContents.classList.remove(`active-tab`)
     }
     event.currentTarget.classList.add(`active-link`)
-    document.getElementById(tabname).classList.add(`active-tab`)
+    document.getElementById(tabName).classList.add(`active-tab`)
 }
-var sideMeu=document.getElementById(`sidemenu`)
+var sideMeu=document.getElementById(`sideMenu`)
 function  openMenu(){
     sideMeu.style.right=`0`
 }
